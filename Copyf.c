@@ -30,6 +30,8 @@ int main(int argc, char **argv){
 		fwrite(buffer, sizeof(char), result, fpcopy);
 	}
 	printf("copy finiished!\n");
+	fclose(fpsource);
+	fclose(fpcopy);
 	return 0;
 }
 
