@@ -34,5 +34,7 @@ int main(int argc, char **argv){
 		write(f2, buffer, result);
 	}
 	printf("file Copy finished\n");
+	close(f1);
+	close(f2);
 	return 0;
 }
