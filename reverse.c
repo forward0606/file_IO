@@ -34,5 +34,6 @@ int main(int argc, char **argv){
 		buf[filesize-1-i] = temp;
 	}
 	write(fd, buf, filesize);
+	close(fd);
 	return 0;
 }
