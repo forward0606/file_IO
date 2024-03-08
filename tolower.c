@@ -30,6 +30,6 @@ int main(int argc, char **argv){
 		lseek(fd, -result, SEEK_CUR);
 		write(fd, buffer, result);
 	}
-
+	close(fd);
 	return 0;
 }
